@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Italiana', sans-serif;
+    background: linear-gradient(120deg, #245443, #28666f, #2c3e0d, #3da27d);
+    background-size: 400% 400%;
+    animation: pastelBG 15s ease-in-out infinite;
+    overflow-x: hidden;
+}
+
+@keyframes pastelBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 5px;
+    width: 100vw;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background: transparent;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: "Italiana", sans-serif;
+    font-weight: 700;
+    color: #dacb58;
+    margin-left: 20px;
+    text-shadow: 2px 2px 3px #0a452f66;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    justify-content: left;
+    margin-left: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+    padding-right: 2em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Italiana', sans-serif;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #6e641b;
+}
+
+.container-form {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    gap: 3%;
+    width: 300px;
+    background-color: rgba(188, 206, 158, 0.379);
+    padding: 1rem;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    margin-left: 50px;
+}
+
+form label {
+    align-self: flex-start;
+    color: #172205;
+    font-weight: 500;
+}
+
+form input, 
+form textarea {
+    width: 200px;
+    margin-top: 5%;
+    background-color: #e3ffbc;
+}
+
+#mensagem {
+    height: 80px;
+    resize: none; 
+}
+
+.redes img {
+    width: 50px;
+    display: flex;
+    margin-top: 80px;
+    margin-left: 1000px;
+}
+
+.whats img {
+    width: 50px;
+    display: flex;
+    margin-top: 80px;
+    margin-left: 1000px;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    margin-top: 12rem;
+}

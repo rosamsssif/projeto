@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <title>Nuno Fotografias</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,15 +34,34 @@
 
     </header>
 
-    <div class="video-background">
-        <video autoplay muted loop playsinline>
-            <source src="background-video.mp4" type="video/mp4">
-            Seu navegador não suporta o elemento de vídeo.
-        </video>
-        <div class="content-overlay">
+    <main>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide first">
+                    <img src="img.png" alt="Foto 1" class="active">
+                </div>
+                <div class="slide">
+                    <img src="img2.png" alt="Foto 2">
+                </div>
+                <div class="slide">
+                    <img src="img3.png" alt="Foto 3">
+                </div>
 
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <section class="cards">
+            <p>Natal</p>
+            <p>Dia das Mães</p>
+            <p>Infantis</p>
+            <p>Aniversários</p>
+        </section>
+    </main>
 
     <footer>
         Desenvolvido por Rosana
